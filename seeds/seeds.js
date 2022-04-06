@@ -15,7 +15,11 @@ const seedDatabase = async () => {
 
     for (const project of projectData) {
         await Project.create({
-
+            ...Project,
+            team_id: team[Math.floor(Math.random() 
+                * team.length)].id,
         })
+        process.exit(0);
     }
 }
+seedDatabase()
