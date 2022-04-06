@@ -32,7 +32,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+<<<<<<< HEAD
 // app.use(require('./controllers'));
+=======
+// app.use(require('./controllers')); ISSUE WITH THIS CODE
+>>>>>>> 06c871349990ab413552fb7dfc641656630b3407
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`));
