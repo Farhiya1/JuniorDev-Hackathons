@@ -33,3 +33,5 @@ Project.belongsTo(Startup, {
     foreignKey: 'startup_id',
     onDelete: 'CASCADE'
 })
+
+module.exports = {Project, User, Startup, Team}
