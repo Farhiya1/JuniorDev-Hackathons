@@ -1,4 +1,3 @@
-const user = require('./user')
 const Project = require('./projects')
 const Team = require('./teams')
 const Startup = require('./startup')
